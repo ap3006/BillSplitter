@@ -1,0 +1,349 @@
+body {
+  background: rgba(0,0,0,.2);
+  margin: 0;
+}
+
+.header {
+  overflow: hidden;
+  background-color: #fe8c00;
+  padding: 15px 10px;
+  /*padding: 13px 10px;
+  height: 100%;*/
+  box-shadow: 5px 10px 18px grey;
+  display: flex;
+
+}
+
+h1 {
+  padding-bottom: 0px;
+  display: table-cell;
+  flex: 0 0 auto;
+  /*align-items: space-between;*/
+  transition: 0.3s;
+  /*border: 1px solid black;*/
+}
+
+h1:hover {
+  color: white;
+  cursor: pointer;
+  /*flex: 0 0 auto;*/
+}
+
+h2 {
+  font-size: 1.8vw;
+}
+
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    overflow-y: inherit;
+    transition: 0.5s;
+    padding-top: 60px;
+    text-align:center;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fe8c00;
+    display: block;
+    transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+    color: #f1f1f1;
+}
+
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+  .sideNotification {padding-top: 15px;}
+  .sideNotification a {font-size: 18px;}
+}
+
+.sideNotification {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.sideNotification a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fe8c00;
+    display: block;
+    transition: 0.3s;
+
+}
+
+
+.sideNotification a:hover{
+    color: #f1f1f1;
+}
+
+.sideNotification .closebtn {
+    position: absolute;
+    top: 0;
+    left: 25px;
+    font-size: 36px;
+    margin-right: 50px;
+}
+
+/*@media screen and (max-height: 450px) {
+  .sideNotification {padding-top: 15px;}
+  .sideNotification a {font-size: 18px;}
+}*/
+
+
+.menu {
+  padding: 17px;
+  color: black;
+  /*float: left;*/
+  padding: 1px 1px;
+  /*border: 1px solid black;*/
+  display: table-cell;
+  flex: 1 1 auto;
+  /*flex-basis: 1%;*/
+  /*align-items: space-between;*/
+  transition: 0.3s;
+
+}
+
+.menu:hover {
+  color: white;
+}
+
+i {
+  cursor: pointer;
+  padding: 5px 0px;
+  text-align: right;
+  /*border: 1px solid black;*/
+  flex: 1 1 auto;
+  /*align-items: space-between;*/
+  transition: 0.3s;
+
+}
+
+textarea {
+  resize: none;
+}
+
+i:hover {
+  color: white;
+}
+
+.textbox {
+  display: flex;
+  /*flex-direction: row;*/
+  position: absolute;
+  flex-basis: 80%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 40%;
+  height: 55%;
+  margin: auto;
+  background-color: #f3f3f3;
+  border: 2px solid #fe8c00;
+  opacity: 0.9;
+  border-radius: 15px;
+  box-shadow: 5px 10px 18px grey;
+  text-align: center;
+
+}
+
+.childTextbox {
+  /*display: none;*/
+  border: 2px solid #fe8c00;
+  background-color: #f3f3f3;
+  text-align: center;
+  /*left: 5%;*/
+  bottom: 10%
+  /*flex:  1 1 auto;*/
+  height: 30vh;
+  width: 20vw;
+  position: relative;
+  overflow: auto;
+  height: 70%;
+  margin-right: 2%;
+}
+
+.flexbox{
+  display: flex;
+  margin-top:8%;
+  margin-left: 4%;
+  margin-right: 4%;
+  width: 100%;
+}
+
+.displayBills {
+  /*display: none;*/
+  border: 2px solid #fe8c00;
+  background-color: #f3f3f3;
+  height: 50vh;
+  width: 20vw;
+  position: relative;
+  overflow: auto;
+}
+
+.displayBills:hover{
+  box-shadow: 5px 10px 18px grey;
+}
+
+.childTextbox:hover{
+  box-shadow: 5px 10px 18px grey;
+}
+
+#login {
+  height: 53%;
+}
+
+.form {
+  text-align: center;
+  margin: auto;
+  overflow: auto;
+  height: 70%;
+  width: 80%
+}
+
+.inputForm{
+  width: 80%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  background: #DCDCDC;
+  /*border:1px solid black;*/
+  text-align: center;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.inputForm:hover  {
+  box-shadow: 5px 10px 18px grey;
+  border: 1px solid #fe8c00;
+}
+
+button {
+  background-color: #fe8c00;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: 1px solid black;
+  cursor: pointer;
+  width: 50%;
+  opacity: 0.9;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+button:hover{
+  /*opacity: 1;*/
+  border: 1px solid #fe8c00;
+  background-color:#111;
+  color: #fe8c00;
+  /*color: #fe8c00;*/
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content{
+  background-color: #f3f3f3;
+  border: 2px solid #fe8c00;
+  margin: 10% auto;
+  padding: 20px;
+  width: 50%;
+  height: 70%;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.17);
+  animation-name: modalopen;
+  animation-duration: 1s;
+  border-radius: 15px;
+  /*display: flex;
+  flex-direction: column;*/
+  overflow: auto;
+}
+
+@keyframes modalopen{
+  from{ opacity: 0}
+  to { opacity: 1}
+}
+
+.closebtn{
+  color: black;
+  cursor: pointer;
+  float: right;
+  font-size: 3vw;
+
+  /*flex: auto;*/
+}
+
+.closebtn:hover {
+  color: #fe8c00;
+}
+
+.remove{
+  cursor:pointer;
+}
+
+.remove:hover{
+  color: #fe8c00;
+}
+
+.groupremove{
+  cursor:pointer;
+}
+
+.groupremove:hover{
+  color: #fe8c00;
+}
+
+.displayT{
+  border: 1px solid #fe8c00;
+  margin-top: 10%;
+}
+
+.displayTable{
+  font-size: 0.8vw;
+  border: 1px solid #fe8c00;
+}
